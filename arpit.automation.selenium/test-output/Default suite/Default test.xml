@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="INPCD0388" failures="0" tests="1" name="arpit.automation.selenium.ReadExcel" time="1.481" errors="0" timestamp="5 Mar 2019 10:26:03 GMT">
+  <testcase classname="arpit.automation.selenium.ReadExcel" name="readExcel" time="1.446"/>
+</testsuite>

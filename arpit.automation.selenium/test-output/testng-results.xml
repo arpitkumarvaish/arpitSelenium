@@ -2,12 +2,12 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-03-01T13:20:21Z" name="Suite" finished-at="2019-03-01T13:20:21Z" duration-ms="156">
+  <suite started-at="2019-03-05T15:56:01Z" name="Default suite" finished-at="2019-03-05T15:56:03Z" duration-ms="1481">
     <groups>
     </groups>
-    <test started-at="2019-03-01T13:20:21Z" name="Test" finished-at="2019-03-01T13:20:21Z" duration-ms="156">
-      <class name="arpit.automation.selenium.DemoForMaven">
-        <test-method signature="demo()" started-at="2019-03-01T13:20:21Z" name="demo" finished-at="2019-03-01T13:20:21Z" duration-ms="59" status="PASS">
+    <test started-at="2019-03-05T15:56:01Z" name="Default test" finished-at="2019-03-05T15:56:03Z" duration-ms="1481">
+      <class name="arpit.automation.selenium.ReadExcel">
+        <test-method signature="readExcel()" started-at="2019-03-05T15:56:01Z" name="readExcel" finished-at="2019-03-05T15:56:03Z" duration-ms="1446" status="PASS">
         </test-method>
       </class>
     </test>
