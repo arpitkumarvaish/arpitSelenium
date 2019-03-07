@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="INPCD0388" failures="0" tests="1" name="arpit.automation.selenium.ReadExcel" time="1.481" errors="0" timestamp="5 Mar 2019 10:26:03 GMT">
-  <testcase classname="arpit.automation.selenium.ReadExcel" name="readExcel" time="1.446"/>
+<testsuite hostname="INPCD0388" failures="0" tests="3" name="arpit.automation.selenium.DataDriven" time="50.219" errors="0" timestamp="7 Mar 2019 09:24:39 GMT">
+  <testcase classname="arpit.automation.selenium.DataDriven" name="LoginWordPress" time="19.506"/>
+  <testcase classname="arpit.automation.selenium.DataDriven" name="LoginWordPress" time="16.335"/>
+  <testcase classname="arpit.automation.selenium.DataDriven" name="LoginWordPress" time="14.242"/>
 </testsuite>

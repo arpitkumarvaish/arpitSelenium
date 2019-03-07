@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="INPCD0388" failures="0" tests="2" name="arpit.automation.selenium.DemoForMaven" time="5.186" errors="0" timestamp="5 Mar 2019 07:44:13 GMT">
-  <testcase classname="arpit.automation.selenium.DemoForMaven" name="demo" time="0.25"/>
-  <testcase classname="arpit.automation.selenium.ReadExcel" name="readExcel" time="4.89"/>
+<testsuite hostname="INPCD0388" failures="1" tests="1" name="arpit.automation.selenium.DataDrivenFRMWK" time="0.261" errors="0" timestamp="6 Mar 2019 06:26:49 GMT">
+  <testcase classname="arpit.automation.selenium.DataDrivenFRMWK" name="LoginWordPress" time="0.198">
+    <failure type="java.lang.IllegalStateException" message="The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html">
+      <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:109)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:290)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:116)
+	at arpit.automation.selenium.DataDrivenFRMWK.LoginWordPress(DataDrivenFRMWK.java:15)
+... Removed 25 stack frames]]>
+    </failure>
+  </testcase>
 </testsuite>

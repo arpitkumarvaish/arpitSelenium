@@ -30,5 +30,7 @@ public class ReadExcel {
 		System.out.println(sht);
 		
 		}
+		
+		wb.close();
 		}
 }

@@ -3,9 +3,9 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)" preserve-order="false">
     <classes>
-      <class name="arpit.automation.selenium.DemoForMaven">
+      <class name="arpit.automation.selenium.DataDrivenFRMWK">
         <methods>
-          <include name="demo"/>
+          <include name="LoginWordPress"/>
         </methods>
       </class>
     </classes>
