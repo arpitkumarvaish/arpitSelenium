@@ -29,34 +29,63 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">50.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">58.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
-<tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="3">arpit.automation.selenium.DataDriven<td><a href="#m1"><b>LoginWordPress</b>  </a></td><td class="numi">3</td><td class="numi">50094</td></tr><tr class="passedodd"><td><a href="#m2"><b>LoginWordPress</b>  </a></td><td class="numi">3</td><td class="numi">50094</td></tr><tr class="passedodd"><td><a href="#m3"><b>LoginWordPress</b>  </a></td><td class="numi">3</td><td class="numi">50094</td></tr>
+<tr><th colspan="4">Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">arpit.automation.selenium.DataDriven<td><a href="#m1"><b>LoginWordPress</b>  </a></td><td class="numi">1</td><td class="numi">13044</td></tr>
+<tr><th colspan="4">Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">arpit.automation.selenium.DataDriven<td><a href="#m2"><b>LoginWordPress</b>  </a></td><td class="numi">2</td><td class="numi">38036</td></tr><tr class="passedodd"><td><a href="#m3"><b>LoginWordPress</b>  </a></td><td class="numi">2</td><td class="numi">38036</td></tr>
 </table>
-<h1>Default test</h1>
+<h1>Test</h1>
 <a id="m1"></a><h2>arpit.automation.selenium.DataDriven:LoginWordPress</h2>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">VGFSD</td>
-<td style="padding-left:.5em;padding-right:2em">SDF</td>
+<tr><td style="padding-left:.5em;padding-right:2em">admin1</td>
+<td style="padding-left:.5em;padding-right:2em">pass1</td>
 </tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;email&apos;]&quot;}
+  (Session info: chrome=72.0.3626.119)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;INPCD0388&apos;, ip: &apos;10.24.132.83&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50251}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017), userDataDir=C:\Users\XAKUMA~1\AppData\Local\Temp\scoped_dir11356_17133}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 474d82395c6cdafc81a118a4099f49e8
+*** Element info: {Using=xpath, value=//*[@id=&apos;email&apos;]}</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+<br/>at arpit.automation.selenium.DataDriven.LoginWordPress(DataDriven.java:24)
+<br/>26 lines not shown
+</td></tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <a id="m2"></a><h2>arpit.automation.selenium.DataDriven:LoginWordPress</h2>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">S</td>
-<td style="padding-left:.5em;padding-right:2em">erg</td>
+<tr><td style="padding-left:.5em;padding-right:2em">admin2</td>
+<td style="padding-left:.5em;padding-right:2em">pass2</td>
 </tr>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <a id="m3"></a><h2>arpit.automation.selenium.DataDriven:LoginWordPress</h2>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">arpitkumarvaish</td>
-<td style="padding-left:.5em;padding-right:2em">aD</td>
+<tr><td style="padding-left:.5em;padding-right:2em">admin3</td>
+<td style="padding-left:.5em;padding-right:2em">pass3</td>
 </tr>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

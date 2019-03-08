@@ -3,19 +3,22 @@ package arpit.automation.selenium;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import Lib.ExcelReadDataConfig;
+
 public class DataDriven {
 
-	
+	WebDriver driver;
 	@Test(dataProvider="datagiver")
 	
 	public void LoginWordPress(String username,String password)
 	{
 		System.setProperty("webdriver.chrome.driver","src\\test\\chromedriver.exe");
 		
-		WebDriver driver=new ChromeDriver();
+		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.navigate().to("https://wordpress.com/start/user");
 		driver.findElement(By.xpath("//*[@id='email']")).sendKeys(username);
@@ -23,18 +26,27 @@ public class DataDriven {
 		driver.close();
 	}
 	
+	@AfterMethod
+	
+	public void teardown()
+	{
+		driver.quit();
+		
+	}
 	@DataProvider
 	
 	public Object[][] datagiver()
 	{
-		Object[][] data=new Object[3][2];
-		
-		data[0][0]="arpitkumarvaish";
-		data[0][1]="aD";
-		data[1][0]="VGFSD";
-		data[1][1]="SDF";
-		data[2][0]="S";
-		data[2][1]="erg";
+		ExcelReadDataConfig excel=new ExcelReadDataConfig("C:\\Users\\xakumarvaish\\Desktop\\Testdata.xlsx");
+	    int row=excel.RowCount(0);
+	    Object[][] data=new Object[row][2];
+	    
+	    for(int i=0;i<row; i++)
+	    {
+	    	data[i][0]=excel.Excelpara(0, i, 0);
+	    	data[i][1]=excel.Excelpara(0, i, 1);
+	    }
+	    
 		
 		return data;
 		

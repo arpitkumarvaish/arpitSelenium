@@ -38,5 +38,13 @@ public class ExcelReadDataConfig {
 		
 	}
 	
+	public int RowCount(int SheetIndex)
+	{
+		int row=wb.getSheetAt(SheetIndex).getLastRowNum();
+		row=row+1;
+		
+		return row;
+	}
+	
 
 }
